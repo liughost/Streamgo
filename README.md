@@ -1,6 +1,6 @@
 # Streamgo
 ## 例子
-<code>
+ <code>
 //起床
 func GetUP(arg interface{}) (interface{}, error) {
     t, _ := arg.(string)
@@ -61,4 +61,4 @@ func main() {
         Next(GetOut).
         Go("2018年1月28日8点10分")
 }
-</code>
+ </code>
