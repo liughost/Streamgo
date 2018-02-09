@@ -6,10 +6,16 @@
 * 每一个任务是一个Stream节点，每个任务节点都包含首节点和下一个任务节点的指针,
 * 除了首节点，每个节都会设置一个回调函数的指针，用本节点的任务执行,
 * 最后一个节点的nextStream为空,表示任务链结束。
+## 导入港式
+* go get github.com/liughost/Streamgo
+## 使用
+* 最后一定要以.Go方法结束,否则不会执行任何方法函数。
+* 初始参数是在最后的.Go方法中传入的，这一点和java8的有所不同。
+* 所有的函数入参必须是(arg interface{}，出參是 (interface{}, error)
 ## 例子
 ``` 
 import (
- "github.com/Streamgo"
+ "github.com/liughost/Streamgo"
  "fmt"
 )
 //起床
