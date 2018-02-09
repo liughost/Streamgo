@@ -8,6 +8,10 @@
 * 最后一个节点的nextStream为空,表示任务链结束。
 ## 例子
 ``` 
+import (
+ "github.com/Streamgo"
+ "fmt"
+)
 //起床
 func GetUP(arg interface{}) (interface{}, error) {
     t, _ := arg.(string)
